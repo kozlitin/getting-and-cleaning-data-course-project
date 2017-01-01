@@ -1,70 +1,71 @@
 
 In the final data set there are the following variables:
 
-"ActivityName" 
-"tBodyAcc-mean()-X" 
-"tBodyAcc-mean()-Y" 
-"tBodyAcc-mean()-Z" 
-"tBodyAcc-std()-X" 
-"tBodyAcc-std()-Y" 
-"tBodyAcc-std()-Z" 
-"tGravityAcc-mean()-X" 
-"tGravityAcc-mean()-Y" 
-"tGravityAcc-mean()-Z" 
-"tGravityAcc-std()-X" 
-"tGravityAcc-std()-Y" 
-"tGravityAcc-std()-Z" 
-"tBodyAccJerk-mean()-X" 
-"tBodyAccJerk-mean()-Y" 
-"tBodyAccJerk-mean()-Z" 
-"tBodyAccJerk-std()-X" 
-"tBodyAccJerk-std()-Y" 
-"tBodyAccJerk-std()-Z" 
-"tBodyGyro-mean()-X" 
-"tBodyGyro-mean()-Y" 
-"tBodyGyro-mean()-Z" 
-"tBodyGyro-std()-X" 
-"tBodyGyro-std()-Y" 
-"tBodyGyro-std()-Z" 
-"tBodyGyroJerk-mean()-X" 
-"tBodyGyroJerk-mean()-Y" 
-"tBodyGyroJerk-mean()-Z" 
-"tBodyGyroJerk-std()-X" 
-"tBodyGyroJerk-std()-Y" 
-"tBodyGyroJerk-std()-Z" 
-"tBodyAccMag-mean()" 
-"tBodyAccMag-std()" 
-"tGravityAccMag-mean()" 
-"tGravityAccMag-std()" 
-"tBodyAccJerkMag-mean()" 
-"tBodyAccJerkMag-std()" 
-"tBodyGyroMag-mean()" 
-"tBodyGyroMag-std()" 
-"tBodyGyroJerkMag-mean()" 
-"tBodyGyroJerkMag-std()" 
-"fBodyAcc-mean()-X" 
-"fBodyAcc-mean()-Y" 
-"fBodyAcc-mean()-Z" 
-"fBodyAcc-std()-X" 
-"fBodyAcc-std()-Y" 
-"fBodyAcc-std()-Z" 
-"fBodyAccJerk-mean()-X" 
-"fBodyAccJerk-mean()-Y" 
-"fBodyAccJerk-mean()-Z" 
-"fBodyAccJerk-std()-X" 
-"fBodyAccJerk-std()-Y" 
-"fBodyAccJerk-std()-Z" 
-"fBodyGyro-mean()-X" 
-"fBodyGyro-mean()-Y" 
-"fBodyGyro-mean()-Z" 
-"fBodyGyro-std()-X" 
-"fBodyGyro-std()-Y" 
-"fBodyGyro-std()-Z" 
-"fBodyAccMag-mean()" 
-"fBodyAccMag-std()" 
-"fBodyBodyAccJerkMag-mean()" 
-"fBodyBodyAccJerkMag-std()" 
-"fBodyBodyGyroMag-mean()" 
-"fBodyBodyGyroMag-std()" 
-"fBodyBodyGyroJerkMag-mean()" 
-"fBodyBodyGyroJerkMag-std()"
+* "ActivityName" - data from activity_labels.txt file
+* "SubjectID" - data from subject_train.txt and subject_test.txt files
+* "tBodyAcc-mean()-X" - aggregated data from X_train.txt and X_test.txt files
+* "tBodyAcc-mean()-Y"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyAcc-mean()-Z"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyAcc-std()-X"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyAcc-std()-Y"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyAcc-std()-Z"  - aggregated data from X_train.txt and X_test.txt files
+* "tGravityAcc-mean()-X"  - aggregated data from X_train.txt and X_test.txt files
+* "tGravityAcc-mean()-Y"  - aggregated data from X_train.txt and X_test.txt files
+* "tGravityAcc-mean()-Z"  - aggregated data from X_train.txt and X_test.txt files
+* "tGravityAcc-std()-X"  - aggregated data from X_train.txt and X_test.txt files
+* "tGravityAcc-std()-Y"  - aggregated data from X_train.txt and X_test.txt files
+* "tGravityAcc-std()-Z"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyAccJerk-mean()-X"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyAccJerk-mean()-Y"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyAccJerk-mean()-Z"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyAccJerk-std()-X"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyAccJerk-std()-Y"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyAccJerk-std()-Z"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyGyro-mean()-X"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyGyro-mean()-Y"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyGyro-mean()-Z"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyGyro-std()-X"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyGyro-std()-Y"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyGyro-std()-Z"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyGyroJerk-mean()-X"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyGyroJerk-mean()-Y"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyGyroJerk-mean()-Z"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyGyroJerk-std()-X"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyGyroJerk-std()-Y"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyGyroJerk-std()-Z"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyAccMag-mean()"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyAccMag-std()"  - aggregated data from X_train.txt and X_test.txt files
+* "tGravityAccMag-mean()"  - aggregated data from X_train.txt and X_test.txt files
+* "tGravityAccMag-std()"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyAccJerkMag-mean()"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyAccJerkMag-std()"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyGyroMag-mean()"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyGyroMag-std()"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyGyroJerkMag-mean()"  - aggregated data from X_train.txt and X_test.txt files
+* "tBodyGyroJerkMag-std()"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyAcc-mean()-X"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyAcc-mean()-Y"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyAcc-mean()-Z"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyAcc-std()-X"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyAcc-std()-Y"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyAcc-std()-Z"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyAccJerk-mean()-X"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyAccJerk-mean()-Y"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyAccJerk-mean()-Z"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyAccJerk-std()-X"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyAccJerk-std()-Y"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyAccJerk-std()-Z"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyGyro-mean()-X"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyGyro-mean()-Y"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyGyro-mean()-Z"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyGyro-std()-X"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyGyro-std()-Y"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyGyro-std()-Z"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyAccMag-mean()"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyAccMag-std()"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyBodyAccJerkMag-mean()"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyBodyAccJerkMag-std()"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyBodyGyroMag-mean()"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyBodyGyroMag-std()"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyBodyGyroJerkMag-mean()"  - aggregated data from X_train.txt and X_test.txt files
+* "fBodyBodyGyroJerkMag-std()" - aggregated data from X_train.txt and X_test.txt files

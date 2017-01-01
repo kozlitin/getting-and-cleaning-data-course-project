@@ -21,8 +21,14 @@ y_train <- read.table('./y_train.txt')
 y_total <- rbind(y_train, y_test)
 names(y_total) <- c("ActID")
 
+subject_test <- read.table('./subject_test.txt')
+subject_train <- read.table('./subject_train.txt')
+subject_total <- rbind(subject_train, subject_test)
+names(subject_total) <- c("SubjectID")
+
 # Now we have activity IDs as additional column
 X_total_mean_std_1 <- cbind(X_total_mean_std,y_total)
+X_total_mean_std_1 <- cbind(X_total_mean_std_1,subject_total)
 
 activity_labels <- read.table('./activity_labels.txt')
 names(activity_labels) <- c("ActID","ActivityName")
@@ -31,6 +37,6 @@ names(activity_labels) <- c("ActID","ActivityName")
 X_total_mean_std_2 <- merge(X_total_mean_std_1,activity_labels)
 
 # 5. Creating new data set with average of each variable for each activity
-final_data_set <- tbl_df(X_total_mean_std_2) %>% select(-ActID) %>% group_by(ActivityName) %>% summarise_all(mean)
+final_data_set <- tbl_df(X_total_mean_std_2) %>% select(-ActID) %>% group_by(ActivityName,SubjectID) %>% summarise_all(mean)
 write.table(final_data_set, file = "./final_data_set.txt", row.name = FALSE)
 
